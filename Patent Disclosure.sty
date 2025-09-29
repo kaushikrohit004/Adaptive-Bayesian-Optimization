@@ -1,0 +1,27 @@
+                                                     Patent Disclosure
+
+Title: Adaptive Deep Learning-Augmented Bayesian Optimization for Real-Time High-Dimensional Scientific Experimentation
+
+Inventor: Rohit Kaushik
+
+Abstract:
+I proposed a novel framework that integrates adaptive deep learning with Bayesian optimization to enhance real-time, high-dimensional scientific experimentation. This approach addresses the inherent challenges of high-dimensional spaces, such as the curse of dimensionality and the inefficiency of traditional acquisition functions, by dynamically adapting the surrogate model and acquisition strategy based on incoming data. Preliminary simulations indicate a significant improvement in convergence rates and resource allocation efficiency, suggesting a transformative impact on complex scientific discovery workflows.
+Mathematical & Algorithmic Foundation:
+
+The acquisition function is defined as
+                                                 α(x) = E[f(x)] + β · Var[f(x)]
+where E[f(x)] represents the model’s expected outcome at configuration x, var[f(x)] quantifies predictive uncertainty, and ββ is an adaptive weighting parameter that dynamically balances exploration and exploitation. Gaussian process posteriors are iteratively updated as new experimental outcomes are observed. The adaptive deep learning module continuously updates the model parameters, improving predictive accuracy in high-dimensional experimental spaces.
+
+Workflow (Pseudocode):
+1. Initialize Gaussian Process model for experimental space
+2. While experiment budget not exhausted:
+       a. Compute acquisition function α(x)
+       b. Select next experimental configuration x* = argmax α(x)
+       c. Run experiment at x* and record outcome f(x*)
+       d. Update Gaussian Process with new data
+       e. Adapt model parameters via deep learning module
+
+3. Output optimized experimental configuration and predictive model
+
+Current Status: Patent concept in development. Methodology has been prototyped and research-validated, demonstrating significant improvements in convergence, accuracy, and efficiency for high-dimensional scientific experimentation.
+Note: This document serves as a proof of concept of ongoing intellectual property development. Technical prototypes and implementation details are available at https://github.com/kaushikrohit004/Adaptive-Bayesian-Optimization.git

@@ -1,4 +1,4 @@
-                                                                                              Patent Disclosure
+## Patent Disclosure
 
 Title: Adaptive Deep Learning-Augmented Bayesian Optimization for Real-Time High-Dimensional Scientific Experimentation
 

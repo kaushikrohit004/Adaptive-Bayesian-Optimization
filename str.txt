@@ -1,0 +1,13 @@
+adaptive-bayesian-optimization/
+├── README.md
+├── docs/
+│   └── patent_disclosure.txt
+├── src/
+│   ├── bayesian_optimization.py
+│   ├── gaussian_process_module.py
+│   └── deep_learning_module.py
+├── simulations/
+│   └── high_dim_experiment_simulation.py
+├── results/
+│   └── performance_analysis.md
+└── LICENSE
